@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="wrongPopUpMainPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moviedle_game.HelloController">
+    <children>
+        <Button fx:id="okeyButton" layoutX="220.0" layoutY="320.0" onAction="#onOkeyButtonClick" prefHeight="60.0" prefWidth="160.0" text="OKEY" />
+        <ImageView fitHeight="200.0" fitWidth="440.0" layoutX="125.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@dontknow-gif.gif" />
+            </image>
+        </ImageView>
+        <Label alignment="CENTER" layoutX="70.0" layoutY="11.0" prefHeight="35.0" prefWidth="480.0" text="Your guessed film is not in IMDB Top 250" textOverrun="CENTER_ELLIPSIS">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="70.0" layoutY="46.0" prefHeight="25.0" prefWidth="480.0" text="or" textOverrun="CENTER_ELLIPSIS">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="70.0" layoutY="73.0" prefHeight="35.0" prefWidth="480.0" text="you writed wrong name,please try again." textOverrun="CENTER_ELLIPSIS">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="winpopUpMainPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moviedle_game.HelloController">
+   <children>
+      <Label alignment="CENTER" layoutX="60.0" layoutY="30.0" prefHeight="75.0" prefWidth="480.0" text="Congrulations!!! You Win!!!">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="200.0" fitWidth="440.0" layoutX="80.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@fireWorks.gif" />
+         </image>
+      </ImageView>
+      <Button fx:id="restartButton" layoutX="90.0" layoutY="310.0" onAction="#onRestartButtonClick" prefHeight="60.0" prefWidth="160.0" text="Restart" />
+      <Button fx:id="ExitButton" layoutX="340.0" layoutY="310.0" mnemonicParsing="false" onAction="#onExitButtonClick" prefHeight="60.0" prefWidth="160.0" text="Exit Game" />
+   </children>
+</AnchorPane>

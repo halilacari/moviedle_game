@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="losepopUpMainPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moviedle_game.HelloController">
+   <children>
+      <Button fx:id="restartButton2" layoutX="90.0" layoutY="310.0" onAction="#onRestartButtonClick2" prefHeight="60.0" prefWidth="160.0" text="Restart" />
+      <Button fx:id="ExitButton2" layoutX="340.0" layoutY="310.0" mnemonicParsing="false" onAction="#onExitButtonClick2" prefHeight="60.0" prefWidth="160.0" text="Exit Game" />
+      <ImageView fitHeight="200.0" fitWidth="440.0" layoutX="137.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@game-overgif.gif" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="60.0" layoutY="14.0" prefHeight="42.0" prefWidth="480.0" text="YOU LOST!!!">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

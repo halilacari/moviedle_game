@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="mainPane" prefHeight="987.0" prefWidth="1438.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moviedle_game.HelloController">
+   <children>
+      <Button fx:id="guessButton" disable="true" layoutX="873.0" layoutY="63.0" onAction="#onGuessButtonClick" prefHeight="39.0" prefWidth="108.0" text="Guess!!!" />
+      <TextField fx:id="inputGuessTxtFld" layoutX="256.0" layoutY="63.0" prefHeight="39.0" prefWidth="619.0" promptText="Enter Your Guess!!!">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" ellipsisString="" layoutX="8.0" layoutY="4.0" prefHeight="59.0" prefWidth="218.0" text="MOVİEDLE">
+         <font>
+            <Font name="Wide Latin" size="19.0" />
+         </font>
+         <textFill>
+            <LinearGradient cycleMethod="REPEAT" endX="0.9383886255924171" endY="0.14218009478672983" startX="0.6161137440758294" startY="0.15165876777251186">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7236841917037964" green="0.6901803016662598" blue="0.6901803016662598" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="startButton" layoutX="551.0" layoutY="102.0" mnemonicParsing="false" onAction="#onstartButtonClick" text="Start The Game!!!" />
+      <Label fx:id="yazilan" layoutX="323.0" layoutY="106.0" prefHeight="17.0" prefWidth="173.0" text="Click For Start The Game -&gt;&gt;" />
+      <Label fx:id="remaining_trial_panel" layoutX="1004.0" layoutY="63.0" prefHeight="39.0" prefWidth="218.0" text="Remaining Trial: 5" />
+      <Pane fx:id="Pane_1" layoutX="170.0" layoutY="180.0" prefHeight="90.0" prefWidth="1080.0" visible="false">
+         <children>
+            <Rectangle fx:id="namePanelRectangle" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" layoutX="20.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+            <Rectangle fx:id="yearPanelRectangle" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" layoutX="180.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+            <Rectangle fx:id="genrePanelRectangle" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="59.0" layoutX="340.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+            <Rectangle fx:id="originPanelRectangle" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="59.0" layoutX="500.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+            <Rectangle fx:id="directorPanelRectangle" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="59.0" layoutX="660.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+            <Rectangle fx:id="starPanelRectangle" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="59.0" layoutX="820.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+            <Text fx:id="nameMovieText" layoutX="21.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="nameMovieText" wrappingWidth="123.0" />
+            <Text fx:id="yearMovieText" layoutX="181.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="yearMovieText" wrappingWidth="129.99999999999977" />
+            <Text fx:id="genreMovieText" layoutX="341.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="genreMovieText" wrappingWidth="129.9999999999999" />
+            <Text fx:id="originMovieText" layoutX="501.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="originMovieText" wrappingWidth="129.9999999999999" />
+            <Text fx:id="directorMovieText" layoutX="661.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="directorMovieText" wrappingWidth="129.9999999999999" />
+            <Text fx:id="starMovieText" layoutX="821.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="starMovieText" wrappingWidth="129.9999999999999" />
+            <ImageView fx:id="upArrow1" fitHeight="50.0" fitWidth="50.0" layoutX="980.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@down_arrow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="downarrow1" fitHeight="50.0" fitWidth="50.0" layoutX="980.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@up_arrow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="equals1" fitHeight="50.0" fitWidth="50.0" layoutX="980.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@equals-gif.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="Pane_2" layoutX="170.0" layoutY="330.0" prefHeight="90.0" prefWidth="1080.0" visible="false">
+         <children>
+            <ImageView fx:id="downarrow2" fitHeight="50.0" fitWidth="50.0" layoutX="980.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@up_arrow.jpg" />
+               </image>
+            </ImageView>
+            <Rectangle fx:id="namePanelRectangle2" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" layoutX="20.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+            <Rectangle fx:id="yearPanelRectangle2" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" layoutX="180.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+            <Rectangle fx:id="genrePanelRectangle2" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="59.0" layoutX="340.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+            <Rectangle fx:id="originPanelRectangle2" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="59.0" layoutX="500.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+            <Rectangle fx:id="directorPanelRectangle2" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="59.0" layoutX="660.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+            <Rectangle fx:id="starPanelRectangle2" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="59.0" layoutX="820.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+            <Text fx:id="nameMovieText2" layoutX="21.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="nameMovieText" wrappingWidth="123.0" />
+            <Text fx:id="yearMovieText2" layoutX="181.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="yearMovieText" wrappingWidth="129.99999999999977" />
+            <Text fx:id="genreMovieText2" layoutX="341.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="genreMovieText" wrappingWidth="129.9999999999999" />
+            <Text fx:id="originMovieText2" layoutX="501.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="originMovieText" wrappingWidth="129.9999999999999" />
+            <Text fx:id="directorMovieText2" layoutX="661.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="directorMovieText" wrappingWidth="129.9999999999999" />
+            <Text fx:id="starMovieText2" layoutX="821.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="starMovieText" wrappingWidth="129.9999999999999" />
+            <ImageView fx:id="upArrow2" fitHeight="50.0" fitWidth="50.0" layoutX="980.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@down_arrow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="equals2" fitHeight="50.0" fitWidth="50.0" layoutX="980.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@equals-gif.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="Pane_3" layoutX="170.0" layoutY="480.0" prefHeight="90.0" prefWidth="1080.0" visible="false">
+         <children>
+            <ImageView fx:id="downarrow3" fitHeight="50.0" fitWidth="50.0" layoutX="980.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@up_arrow.jpg" />
+               </image>
+            </ImageView>
+            <Rectangle fx:id="namePanelRectangle3" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" layoutX="20.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+            <Rectangle fx:id="yearPanelRectangle3" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" layoutX="180.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+            <Rectangle fx:id="genrePanelRectangle3" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="59.0" layoutX="340.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+            <Rectangle fx:id="originPanelRectangle3" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="59.0" layoutX="500.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+            <Rectangle fx:id="directorPanelRectangle3" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="59.0" layoutX="660.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+            <Rectangle fx:id="starPanelRectangle3" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="59.0" layoutX="820.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+            <Text fx:id="nameMovieText3" layoutX="21.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="nameMovieText" wrappingWidth="123.0" />
+            <Text fx:id="yearMovieText3" layoutX="181.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="yearMovieText" wrappingWidth="129.99999999999977" />
+            <Text fx:id="genreMovieText3" layoutX="341.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="genreMovieText" wrappingWidth="129.9999999999999" />
+            <Text fx:id="originMovieText3" layoutX="501.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="originMovieText" wrappingWidth="129.9999999999999" />
+            <Text fx:id="directorMovieText3" layoutX="661.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="directorMovieText" wrappingWidth="129.9999999999999" />
+            <Text fx:id="starMovieText3" layoutX="821.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="starMovieText" wrappingWidth="129.9999999999999" />
+            <ImageView fx:id="upArrow3" fitHeight="50.0" fitWidth="50.0" layoutX="980.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@down_arrow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="equals3" fitHeight="50.0" fitWidth="50.0" layoutX="980.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@equals-gif.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="Pane_4" layoutX="170.0" layoutY="630.0" prefHeight="90.0" prefWidth="1080.0" visible="false">
+         <children>
+            <ImageView fx:id="downarrow4" fitHeight="50.0" fitWidth="50.0" layoutX="980.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@up_arrow.jpg" />
+               </image>
+            </ImageView>
+            <Rectangle fx:id="namePanelRectangle4" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" layoutX="20.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+            <Rectangle fx:id="yearPanelRectangle4" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" layoutX="180.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+            <Rectangle fx:id="genrePanelRectangle4" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="59.0" layoutX="340.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+            <Rectangle fx:id="originPanelRectangle4" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="59.0" layoutX="500.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+            <Rectangle fx:id="directorPanelRectangle4" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="59.0" layoutX="660.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+            <Rectangle fx:id="starPanelRectangle4" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="59.0" layoutX="820.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+            <Text fx:id="nameMovieText4" layoutX="21.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="nameMovieText" wrappingWidth="123.0" />
+            <Text fx:id="yearMovieText4" layoutX="181.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="yearMovieText" wrappingWidth="129.99999999999977" />
+            <Text fx:id="genreMovieText4" layoutX="341.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="genreMovieText" wrappingWidth="129.9999999999999" />
+            <Text fx:id="originMovieText4" layoutX="501.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="originMovieText" wrappingWidth="129.9999999999999" />
+            <Text fx:id="directorMovieText4" layoutX="661.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="directorMovieText" wrappingWidth="129.9999999999999" />
+            <Text fx:id="starMovieText4" layoutX="821.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="starMovieText" wrappingWidth="129.9999999999999" />
+            <ImageView fx:id="upArrow4" fitHeight="50.0" fitWidth="50.0" layoutX="980.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@down_arrow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="equals4" fitHeight="50.0" fitWidth="50.0" layoutX="980.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@equals-gif.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="Pane_5" layoutX="170.0" layoutY="790.0" prefHeight="90.0" prefWidth="1080.0" visible="false">
+         <children>
+            <ImageView fx:id="downarrow5" fitHeight="50.0" fitWidth="50.0" layoutX="980.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@up_arrow.jpg" />
+               </image>
+            </ImageView>
+            <Rectangle fx:id="namePanelRectangle5" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" layoutX="20.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+            <Rectangle fx:id="yearPanelRectangle5" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" layoutX="180.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+            <Rectangle fx:id="genrePanelRectangle5" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="59.0" layoutX="340.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+            <Rectangle fx:id="originPanelRectangle5" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="59.0" layoutX="500.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+            <Rectangle fx:id="directorPanelRectangle5" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="59.0" layoutX="660.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+            <Rectangle fx:id="starPanelRectangle5" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="59.0" layoutX="820.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+            <Text fx:id="nameMovieText5" layoutX="21.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="nameMovieText" wrappingWidth="123.0" />
+            <Text fx:id="yearMovieText5" layoutX="181.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="yearMovieText" wrappingWidth="129.99999999999977" />
+            <Text fx:id="genreMovieText5" layoutX="341.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="genreMovieText" wrappingWidth="129.9999999999999" />
+            <Text fx:id="originMovieText5" layoutX="501.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="originMovieText" wrappingWidth="129.9999999999999" />
+            <Text fx:id="directorMovieText5" layoutX="661.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="directorMovieText" wrappingWidth="129.9999999999999" />
+            <Text fx:id="starMovieText5" layoutX="821.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="starMovieText" wrappingWidth="129.9999999999999" />
+            <ImageView fx:id="upArrow5" fitHeight="50.0" fitWidth="50.0" layoutX="980.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@down_arrow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="equals5" fitHeight="50.0" fitWidth="50.0" layoutX="980.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@equals-gif.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Button fx:id="secretButton" layoutX="1203.0" layoutY="90.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onSecretButtonClicked" prefHeight="1.0" prefWidth="0.0" text="Button" />
+      <Label fx:id="year_shower" alignment="CENTER" layoutX="1140.0" layoutY="157.0" prefWidth="120.0" text="Selected Film Year" />
+   </children>
+</Pane>
